@@ -58,6 +58,15 @@
 }
 
 @media (max-width: 480px) {
+
+    .about p {
+        padding: 0;
+    }
+
+    .about__techs__icons {
+        padding: 0;
+    }
+    
     .about__title {
         flex-direction: column;
         align-items: flex-start;
