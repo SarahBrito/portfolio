@@ -109,3 +109,15 @@
         min-width: 340px;
     }
 }
+
+@media (max-width: 480px) {
+    .profile {
+        height: 90%;
+    }
+
+    .download__curriculum  {
+        margin-top: 1.5rem;
+        
+        
+    }
+}
