@@ -33,7 +33,6 @@
 
 .navbar__menu {
     align-items: center;
-   
     display: flex;
     gap: 2rem;
 }
@@ -92,7 +91,7 @@
       background: #11001c;
     }
 
-    .navbar__menu li {
+    .navbar__menu a {
         border: none;
         border-bottom: 1px solid transparent;
         border-image: linear-gradient(90deg, #97dffc 0%, #7364d2 50%, #5829a7 100%);
