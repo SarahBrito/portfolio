@@ -38,7 +38,9 @@
     gap: 2rem;
 }
 
-.navbar__menu li {
+.navbar__menu a {
+    color: #fff;
+    font-weight: 700;
     background: none;
     border: 2px solid transparent;
     border-image: linear-gradient(0deg, #97dffc 0%, #7364d2 50%, #5829a7 100%);
@@ -50,15 +52,9 @@
     justify-content: center;
 }
 
-.navbar__menu a {
-    color: #fff;
-    font-weight: 700;
-}
-
 .navbar__menu a.active{
     color: #7364d2;
 }
-
 
 .menu__hamburger {
     background: none;
@@ -103,7 +99,4 @@
         border-image-slice: 1;
         padding: 2rem 0;
     }
-
-   
-
 }  
