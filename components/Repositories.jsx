@@ -8,7 +8,7 @@ function Repositories() {
 
     const repos= [
         {img: img1, name: 'EmmiMovie', url: 'https://github.com/SarahBrito/emmi-movie', homepage: 'https://emmi-movie.vercel.app/'},
-        {img: img2, name: 'HouzelLab', url: 'https://github.com/Houzel-Lab/web', homepage: 'https://web-swart-zeta.vercel.app/'}
+        {img: img2, name: 'HouzelLab', url: 'https://github.com/Houzel-Lab/web', homepage: 'https://www.laboratoriohouzellab.com/'}
     ]
    
     return (
