@@ -7,7 +7,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3.5rem .8rem;
+    padding: 2.5rem .8rem;
+    gap: 1rem;
 }
 
 .profile__avatar {
@@ -60,14 +61,14 @@
 }
 
 .profile__contact {
-    padding: 1rem;
+    padding: 0 .5rem;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1.2rem;
-    height: 300px;
-    width: 280px;
+    height: 250px;
+    width: 290px;
 }
 
 .profile__contact__phone, .profile__contact__email, 
@@ -106,14 +107,14 @@
     .profile {
         width: 100%;
         min-width: 340px;
+        padding-top: 2rem;
+        height: 100%;
     }
 }
 
 @media (max-width: 480px) {
-    .profile {
-        padding-top: 2rem;
-    }
+   
     .profile__avatar{
-        width: 65%;
+        width: 60%;
     }
 }
