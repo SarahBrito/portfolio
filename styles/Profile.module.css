@@ -78,7 +78,7 @@
     gap: .5rem;
 }
 
-.download__curriculum {
+.button__projects{
     color: #000;
     font-size: 1rem;
     display: flex;
@@ -88,19 +88,23 @@
     border-radius: 50px;
     border: none;
     padding: 1rem;
-    background: linear-gradient(90deg, #97dffc 0%, #7364d2 50%, #5829a7 100%);
+    background-image: linear-gradient(to right, #97dffc 0%, #7364d2 50%, #5829a7 100%);
     font-weight: 700;
     width: 90%;
     max-width: 250px;
     margin: 0 auto;
     margin-top: 1.5rem;
-    transition: .3s ease-in-out;
+    background-size: 150% 100%;
+    transition: all .4s ease-in-out;
 }
 
-.download__curriculum:hover {
-    background: none;
-    border: 1px solid #97dffc;
-    color: #5829a7;
+.button__projects:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+}
+
+.button__projects:focus {
+    outline: none;
 }
 
 @media (max-width: 1100px) {

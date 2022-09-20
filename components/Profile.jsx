@@ -45,7 +45,7 @@ function Profile() {
                         <RiMapPin2Fill size={25} color={'#1982c4'}/> <span>Juazeiro do Norte - CE</span>
                     </div>
 
-                    <Link  href="/projects"><a className={styles.download__curriculum} target="_blank" rel="noopener noreferrer">Projetos</a></Link>
+                    <Link  href="/projects"><a className={styles.button__projects} target="_blank" rel="noopener noreferrer">Projetos</a></Link>
                 </div>
 
         </aside>
