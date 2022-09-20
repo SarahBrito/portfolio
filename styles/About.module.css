@@ -58,7 +58,10 @@
 }
 
 @media (max-width: 480px) {
-
+    .about {
+        padding: 2rem 2.5rem
+    }
+    
     .about p {
         padding: 0;
     }
