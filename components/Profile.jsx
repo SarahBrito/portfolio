@@ -1,7 +1,7 @@
 import { useRouter } from "next/router"
 import Link from 'next/link'
 import Image  from 'next/image';
-import avatar from '../public/images/eu.jpg'
+import avatar from '../public/images/eu.jpeg'
 import { RiLinkedinBoxFill, RiGithubFill, RiInstagramFill, 
         RiPhoneFill, RiMailFill, RiMapPin2Fill } from "react-icons/ri";
 
