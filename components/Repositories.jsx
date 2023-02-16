@@ -3,12 +3,14 @@ import styles from '../styles/Repository.module.css'
 import Image from 'next/image';
 import img1 from '../public/images/emmimovie.png'
 import img2 from '../public/images/houzellab.png'
+import img3 from '../public/images/todo-app.png'
 
 function Repositories() {
 
     const repos= [
         {img: img1, name: 'EmmiMovie', url: 'https://github.com/SarahBrito/emmi-movie', homepage: 'https://emmi-movie.vercel.app/'},
-        {img: img2, name: 'HouzelLab', url: 'https://github.com/Houzel-Lab/web', homepage: 'https://www.laboratoriohouzellab.com/'}
+        {img: img2, name: 'HouzelLab', url: 'https://github.com/Houzel-Lab/web', homepage: 'https://www.laboratoriohouzellab.com/'},
+        {img: img3, name: 'Todo-App', url: 'https://github.com/SarahBrito/todo-list', homepage: 'https://todo-fm.vercel.app/'}
     ]
    
     return (
