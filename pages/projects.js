@@ -1,13 +1,12 @@
-import NavBar from "../components/NavBar";
 import Repositories from "../components/Repositories";
+
+import styles from '../styles/Home.module.scss'
 
 function Projects() {
     return (
-        <>
-            <NavBar />
+        <div className={styles.container}>
             <Repositories />
-        </> 
-      
+        </div> 
      );
 }
 

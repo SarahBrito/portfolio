@@ -1,11 +1,12 @@
 import { useState } from "react"
 import { useRouter } from "next/router"
 import Link from 'next/link'
-import { FaBars } from "react-icons/fa";
+import { AiOutlineHome } from 'react-icons/ai'
+import { HiOutlineCube, HiMenuAlt3 } from 'react-icons/hi'
 import classNames from "classnames"
 
 // arquivos css
-import styles from '../styles/NavBar.module.css'
+import styles from '../styles/NavBar.module.scss'
 
 
 function NavBar() {
@@ -31,14 +32,16 @@ function NavBar() {
 
             <button className={styles.menu__hamburger}
                 onClick={handleToggleNav}>
-                <FaBars size={30} color="#06A3B8" aria-label="Menu" />
+                <HiMenuAlt3 size={30} color="#06A3B8" aria-label="Menu" />
             </button>
             <ul className={classes}>
                 <li>
-                    <Link  href="/"><a className={router.pathname == '/'? styles.active : ''}>Home</a></Link>
+                    <Link  href="/"><a className={router.pathname == '/'? styles.active : ''}>
+                    <AiOutlineHome className={styles.icon}/> Iníco</a></Link>
                 </li>
                 <li>
-                    <Link  href="/projects"><a className={router.pathname == '/projects'? styles.active : ''}>Projetos</a></Link>
+                    <Link  href="/projects"><a className={router.pathname == '/projects'? styles.active : ''}>
+                    <HiOutlineCube className={styles.icon}/> Projetos</a></Link>
                 </li>
             </ul>
             </div>

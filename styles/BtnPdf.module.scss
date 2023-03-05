@@ -1,0 +1,30 @@
+
+.btn__Curriculum{
+    color: #000;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 50px;
+    border: none;
+    padding: 1rem;
+    background-image: linear-gradient(to right, #97dffc 0%, #7364d2 50%, #5829a7 100%);
+    font-weight: 700;
+    width: 90%;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    background-size: 150% 100%;
+    transition: all .4s ease-in-out;
+}
+
+.btn__Curriculum:hover {
+    cursor: pointer;
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+}
+
+.btn__Curriculum:focus {
+    outline: none;
+}

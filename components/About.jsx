@@ -1,5 +1,5 @@
-import styles from '../styles/About.module.css'
-import {DiHtml5, DiCss3, DiGit, DiReact, DiJsBadge} from "react-icons/di"
+import styles from '../styles/About.module.scss'
+import {SiNextdotjs, SiJavascript, SiTypescript, SiGit, SiSass, SiReact} from 'react-icons/si'
 
 function About() {
     return (
@@ -18,17 +18,30 @@ function About() {
                     <h2>Tecnologias</h2>
                     <span></span>
                 </div>
-                <div className={styles.about__techs__icons}>
-                    <DiHtml5 className={styles.techs__icon} color={'#E65100'}/>
-                    <DiCss3 className={styles.techs__icon} color={'#0277BD'}/>
-                    <DiJsBadge className={styles.techs__icon} color={'#F7DF1E'}/>
-                    <DiReact className={styles.techs__icon} color={'#80DEEA'}/>
-                    <DiGit className={styles.techs__icon} color={'#F4511E'}/>
+                <div className={styles.about__skills}>
+                    <div className={`${styles.skill__icon} ${styles.react}`}>
+                        <SiReact size={60}/>
+                    </div>
+                    <div className={`${styles.skill__icon} ${styles.next}`}>
+                        <SiNextdotjs size={60}/>
+                    </div>
+                    <div className={`${styles.skill__icon} ${styles.javascript}`}>
+                        <SiJavascript size={60}/>
+                    </div>
+                    <div className={`${styles.skill__icon} ${styles.typescript}`}>
+                        <SiTypescript size={60}/>
+                    </div>
+                    <div className={`${styles.skill__icon} ${styles.git}`}>
+                        <SiGit size={60}/>
+                    </div>
+                    <div className={`${styles.skill__icon} ${styles.scss}`}>
+                        <SiSass size={60}/>
+                    </div>
                 </div>
                
             </div>
-            
-        </section> 
+            </section> 
+        
      );
 }
 

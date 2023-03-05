@@ -1,50 +1,51 @@
 import { FaRocket, FaGithub } from "react-icons/fa";
-import styles from '../styles/Repository.module.css'
+import styles from '../styles/Repository.module.scss'
 import Image from 'next/image';
-import img1 from '../public/images/emmimovie.png'
-import img2 from '../public/images/houzellab.png'
-import img3 from '../public/images/todo-app.png'
-import img4 from '../public/images/adice-generator.png'
+import imgEmmimovie from '../public/images/emmimovie.png'
+import imgHouzellab from '../public/images/houzellab.png'
+import imgTodoDo from '../public/images/todo-app.png'
+import imgAdiceGenerator from '../public/images/adice-generator.png'
+import Link from "next/link";
 
 function Repositories() {
 
     const repos= [
-        {img: img1, name: 'EmmiMovie', url: 'https://github.com/SarahBrito/emmi-movie', homepage: 'https://emmi-movie.vercel.app/'},
-        {img: img2, name: 'HouzelLab', url: 'https://github.com/Houzel-Lab/web', homepage: 'https://www.laboratoriohouzellab.com/'},
-        {img: img3, name: 'Todo-App', url: 'https://github.com/SarahBrito/todo-list', homepage: 'https://todo-fm.vercel.app/'},
-        {img: img4, name: 'Advice Generator', url: 'https://github.com/SarahBrito/advice-generator', homepage: 'https://advice-generator-fm1.vercel.app/'}
+        {img: imgEmmimovie, name: 'EmmiMovie', github: 'https://github.com/SarahBrito/emmi-movie', deploy: 'https://emmi-movie.vercel.app/'},
+        {img: imgHouzellab, name: 'HouzelLab', github: 'https://github.com/Houzel-Lab/web', deploy: 'https://www.laboratoriohouzellab.com/'},
+        {img: imgTodoDo, name: 'Todo-App', github: 'https://github.com/SarahBrito/todo-list', deploy: 'https://todo-fm.vercel.app/'},
+        {img: imgAdiceGenerator, name: 'Advice Generator', github: 'https://github.com/SarahBrito/advice-generator', deploy: 'https://advice-generator-fm1.vercel.app/'}
     ]
    
     return (
       
-             <div className={styles.repositories}>
-                {repos.map(repo =>{
-                   return (
-                    <div className={styles.repository} key={repo.name}>
-                        <div className={styles.repository__image__container}>
-                            <a href={repo.homepage} target="_blank" rel="noopener noreferrer">
-                                <Image
-                                    className={styles.repository__image} 
-                                    src={repo.img}
-                                    alt={repo.name}
-                                />
-                            </a>
+        <div className={styles.project__container}>
+            <div className={styles.project__title}>
+                <h2>Projetos</h2>
+                <span></span>
+            </div>
+            <div className={styles.projects__items}>
+                {repos.map((project, index)=>{
+                    return (
+                    <div key={index} className={styles.project__card}>
+                        <section>
+                            <Image 
+                            src={project.img}
+                            alt={"Capa projeto"}
+                            className={styles.card__image}
+                            />
+                        <div className={styles.card__social}>
+                            <h3>{project.name}</h3>
+                            <div className={styles.card__social__icons} >
+                                <Link href={project.github}><FaGithub className={styles.social__icon} size={20}/></Link>
+                                <Link href={project.deploy}><FaRocket className={styles.social__icon} size={20}/></Link>
+                            </div>
                         </div>
-                        <h2 className={styles.repository__title}>{repo.name}</h2>
-                        <divc className={styles.repository__links}>
-                            <a href={repo.url} target="_blank" rel="noopener noreferrer">
-                                <FaGithub className={styles.repository__links__icon} />
-                            </a>
-                            <a href={repo.homepage} target="_blank" rel="noopener noreferrer">
-                                <FaRocket className={styles.repository__links__icon} />
-                            </a>
-                        </divc>
-                        
+                        </section>
                     </div>
-                   )
+                    )
                 })}
-             </div>      
-        
+            </div>
+    </div> 
      );
 }
 
