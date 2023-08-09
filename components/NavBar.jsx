@@ -14,7 +14,9 @@ function NavBar() {
 
     function handleToggleNav(){
       setIsNavActive(!isNavActive)
+      
     }
+
     function closeMenu(){
       setIsNavActive(!isNavActive)
     }
@@ -36,12 +38,16 @@ function NavBar() {
             </button>
             <ul className={classes}>
                 <li>
-                    <Link  href="/"><a className={router.pathname == '/'? styles.active : ''}>
-                    <AiOutlineHome className={styles.icon}/> Iníco</a></Link>
+                    <Link href="/">
+                        <a onClick={closeMenu} className={router.pathname == '/'? styles.active : ''}>
+                        <AiOutlineHome className={styles.icon}/> Iníco</a>
+                    </Link>
                 </li>
                 <li>
-                    <Link  href="/projects"><a className={router.pathname == '/projects'? styles.active : ''}>
-                    <HiOutlineCube className={styles.icon}/> Projetos</a></Link>
+                    <Link href="/projects">
+                        <a onClick={closeMenu} className={router.pathname == '/projects'? styles.active : ''}>
+                        <HiOutlineCube className={styles.icon}/> Projetos</a>
+                    </Link>
                 </li>
             </ul>
             </div>

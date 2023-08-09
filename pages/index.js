@@ -8,16 +8,15 @@ export default function Home() {
   return (
 
     <div>
-      <Head>
+     <Head>
+        <link rel="shortcut icon" href="/favicon.ico" />
         <title>Site Pessoal</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="shortcut icon" href="/public/favicon.ico" />
       </Head>
       <main className={styles.container}>
         <Profile />
         <About />
       </main>
-      
     </div>
     
   )
