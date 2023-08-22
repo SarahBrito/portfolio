@@ -9,8 +9,7 @@ function About() {
                     <h2>Sobre</h2>
                     <span></span>
                 </div>
-                <p>Olá! Meu nome é Sara, sou graduanda em Análise e Desenvolvimento de Sistemas. 
-                Atualmente focada em desenvolvimento Front-end (HTML, CSS, Javascript e React).
+                <p>Olá! Meu nome é Sara, sou formada em Análise e Desenvolvimento de Sistemas. Atualmente focada em desenvolvimento Front-end (Javascript e React). Comprometida em aprimorar minhas habilidades, e explorar novas ferramentas e tecnologias.
                 </p>
             </div>
             <div className={styles.about__techs}>
