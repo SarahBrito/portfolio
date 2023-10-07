@@ -5,6 +5,7 @@ import imgEmmimovie from '../public/images/emmimovie.png'
 import imgHouzellab from '../public/images/houzellab.png'
 import imgTodoDo from '../public/images/todo-app.png'
 import imgAdiceGenerator from '../public/images/adice-generator.png'
+import restCountriesApi from '../public/images/rest-countries-api.png'
 import Link from "next/link";
 
 function Repositories() {
@@ -13,7 +14,8 @@ function Repositories() {
         {img: imgEmmimovie, name: 'EmmiMovie', github: 'https://github.com/SarahBrito/emmi-movie', deploy: 'https://emmi-movie.vercel.app/'},
         {img: imgHouzellab, name: 'HouzelLab', github: 'https://github.com/Houzel-Lab/web', deploy: 'https://www.laboratoriohouzellab.com/'},
         {img: imgTodoDo, name: 'Todo-App', github: 'https://github.com/SarahBrito/todo-list', deploy: 'https://todo-fm.vercel.app/'},
-        {img: imgAdiceGenerator, name: 'Advice Generator', github: 'https://github.com/SarahBrito/advice-generator', deploy: 'https://advice-generator-fm1.vercel.app/'}
+        {img: imgAdiceGenerator, name: 'Advice Generator', github: 'https://github.com/SarahBrito/advice-generator', deploy: 'https://advice-generator-fm1.vercel.app/'},
+        {img: restCountriesApi, name: 'Rest Coutries Api', github: 'https://github.com/SarahBrito/rest-countries-api', deploy: 'https://app-countries-api.vercel.app/'}
     ]
    
     return (
